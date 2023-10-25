@@ -7,9 +7,10 @@
 :root {
     --headingFont: 'Playfair Display', serif;
 }
-:root{
+
+:root {
     --commonFont: 'Manrope', sans-serif;
-    }
+}
 
 * {
     font-family: var(--fontBody);
@@ -41,7 +42,7 @@ header {
 
 .logo-text {
     font-family: var(--headingFont);
-     font-weight: 600;
+    font-weight: 600;
     font-size: 28px;
 }
 
@@ -110,7 +111,7 @@ nav a {
 }
 
 .reservation {
-    color: #FFF; 
+    color: #FFF;
     background-color: #7A9CA5;
     border: none;
     width: 12rem;
@@ -118,7 +119,7 @@ nav a {
     font-size: 0.875rem;
     font-weight: 700;
     font-family: var(--commonFont);
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 1rem;
 }
 
@@ -132,12 +133,16 @@ nav a {
     align-items: center;
     justify-content: center;
     background-color: #EBF3F5;
-   
+
 }
 
 .rightSection {
-    
+    background-image: url("./images/leftBackground.jpg");
     box-shadow: 0px 20px 60px 0px rgba(47, 68, 73, 0.46);
+    display: flex;
+    align-items: center;
+    position: relative;
+
 }
 
 .container {
@@ -155,7 +160,7 @@ nav a {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1rem;
-  
+
 
 }
 
@@ -182,10 +187,33 @@ nav a {
     font-style: normal;
     font-weight: 700;
 }
-  p{
+
+p {
     color: #555;
-    font-family:var(--commonFont);
+    font-family: var(--commonFont);
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-  }
+}
+
+.frame {
+    width: 26rem;
+    height: 33rem;
+    border: 9px solid white;
+    border-left: none;
+
+}
+
+.frameImage {
+    width: 26rem;
+    height: 27rem;
+    object-fit: cover;
+    position: absolute;
+    top: 22%;
+    left: -4rem;
+    box-shadow: -93px 58px 98px -70px rgba(96,93,93,0.75);
+-webkit-box-shadow: -93px 58px 98px -70px rgba(96,93,93,0.75);
+-moz-box-shadow: -93px 58px 98px -70px rgba(96,93,93,0.75);
+
+
+}
