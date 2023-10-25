@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Lora:ital@1&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
+    --fontBody: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --headingFont: 'Playfair Display', serif;
+}
+:root{
+    --commonFont: 'Manrope', sans-serif;
+    }
+
 * {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--fontBody);
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -10,7 +21,7 @@
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
     height: 4rem;
     background-color: #FFF;
     justify-content: space-between;
@@ -29,14 +40,14 @@ header {
 }
 
 .logo-text {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
+    font-family: var(--headingFont);
+     font-weight: 600;
     font-size: 28px;
 }
 
 .number {
     color: #141414;
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--commonFont);
     font-weight: 600;
 
 
@@ -67,7 +78,7 @@ nav {
 
 nav a {
     color: #555;
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--commonFont);
     font-size: 1.125rem;
     font-weight: 400;
 
@@ -91,17 +102,24 @@ nav a {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+}
+
+.fa-brands {
+    color: #141414;
 }
 
 .reservation {
-    color: #FFF;
+    color: #FFF; 
     background-color: #7A9CA5;
-
+    border: none;
     width: 12rem;
     height: 3rem;
     font-size: 0.875rem;
     font-weight: 700;
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--commonFont);
+    cursor:pointer;
+    margin-top: 1rem;
 }
 
 .fa-calendar {
@@ -109,13 +127,16 @@ nav a {
 }
 
 .leftSection {
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #EBF3F5;
+   
 }
 
 .rightSection {
-    background: #A2B3BF;
+    
     box-shadow: 0px 20px 60px 0px rgba(47, 68, 73, 0.46);
 }
 
@@ -126,3 +147,45 @@ nav a {
     width: 100%;
     height: 100vh;
 }
+
+.text1 {
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+  
+
+}
+
+.welcome {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.welcome h5 {
+    color: #5C8692;
+    font-family: var(--commonFont);
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.title {
+    color: #141414;
+    font-family: var(--headingFont);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+}
+  p{
+    color: #555;
+    font-family:var(--commonFont);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+  }
