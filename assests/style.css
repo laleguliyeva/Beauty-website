@@ -225,7 +225,7 @@ p {
     height: 29rem;
     display: flex;
     flex-direction: column;
-    border-radius: 10%;
+    border-radius: 5%;
 
 
 }
@@ -263,7 +263,7 @@ font-family: var(--commonFont);
 .card:hover{
     transform: scale(1.1);
     transition: 1.5s;
-    /* background-color:#5C8692 ; */
+    background-color:#5C8692 ;
     
 }
 .card:active{
@@ -280,5 +280,11 @@ font-family: var(--commonFont);
     width: 20rem;
 
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 5%;
+}
+.aboutUs{
+    width: 120rem;
+    background-color: #EBF3F5;
+    height: 57rem;
+    margin-top: 4rem;
 }
